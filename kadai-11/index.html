@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>おみくじ</title>
+    <style>
+      .container {
+          position: relative;
+          top: 50%;
+          left: 50%;
+      }
+      button {
+          
+          height: 200px;
+          width: 600px;
+          font-size: 80px;
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <button id="button">おみくじを引く</button>
+   </div>
+   <script>
+     const button = document.getElementById('button');
+     
+     
+     button.addEventListener('click', ()=>{
+         
+         fetch("https://4000-e386a067-1953-4eab-a18e-a8cac306e347.ws-ap01.gitpod.io/")
+        .then(res => res.text())//レスポンスを文字として認識する
+        .then(data => alert(data))
+
+     })
+     
+   </script>
+</body>
+</html>

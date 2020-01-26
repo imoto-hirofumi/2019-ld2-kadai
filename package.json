@@ -1,0 +1,23 @@
+{
+  "name": "2019-ld2-kadai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imoto-hirofumi/2019-ld2-kadai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imoto-hirofumi/2019-ld2-kadai/issues"
+  },
+  "homepage": "https://github.com/imoto-hirofumi/2019-ld2-kadai#readme",
+  "dependencies": {
+    "cowsay": "^1.4.0"
+  }
+}

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>おみくじ</title>
+    <style>
+      .container {
+          position: relative;
+          top: 50%;
+          left: 50%;
+      }
+      button {
+          
+          height: 200px;
+          width: 600px;
+          font-size: 80px;
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <button id="button">おみくじを引く</button>
+   </div>
+   <script>
+     const button = document.getElementById('button');
+     const words = ["小吉です", "中吉です", "大吉です", "凶です", "末吉です", "吉", "小凶", "末凶", "大凶", "半凶", "半吉"];
+     let word;
+     
+     button.addEventListener('click', ()=>{
+         word = words[Math.floor(Math.random()*words.length)];
+       alert(word);
+     })
+   </script>
+</body>
+</html>
